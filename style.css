@@ -106,16 +106,16 @@ button{
 
 /*unsubscribe button*/
 .unsubscribe__btn{
-    border-radius: .5rem;
-    padding: .25em 1.75em;
-    border: 1px solid black;
-    background-color: white;
     text-align: right;
     color: black;
 }
 .unsubscribe__btn--right{
+    border-radius: .5rem;
+    padding: .5em 1.75em;
+    border: 1px solid black;
+    background-color: black;
     text-align: right;
-    color: black;
+    color: white;
 }
 
 .main__grid{
