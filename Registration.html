@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Page</title>
+    <link rel="stylesheet" type="text/css" href="reg.css">
+</head>
+<a href="reg.css"></a>
+<body>
+    <div class="container">
+    <h2><u>Registration Form</u></h2>
+    <h3>Enter Your Details:</h3>
+        <form action="registration.php" method="POST">
+            <form>
+                <table>
+                    <tr>
+                        <td>
+                            First Name:
+                        </td>
+                        <td>
+                            <input type="text" name="FirstName" size="30" required></br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Last Name:
+                        </td>
+                        <td>
+                            <input type="text" name="LastName" size="30" required></br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Date of Birth:
+                        </td>
+                        <td>
+                            <input type="date" name="DateofBirth" size="30" required></br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Email Address:
+                        </td>
+                        <td>
+                            <input type="email" name="Email" size="30" required></br>
+                        </td>
+                    </tr>
+                </tr>
+                <tr>
+                    <td>
+                        Phone Number:
+                        <td>
+                            <input type="text" name="countrycode" value="+971" disabled>
+                            <input type="text" name="phonenumber" size="10"><br/>
+                        </td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        User Name:
+                    </td>
+                    <td>
+                        <input type="text" name="Username" size="30" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Password:
+                    </td>
+                    <td>
+                        <input type="password" name="password" size="30" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <input type="submit" value="Register">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
