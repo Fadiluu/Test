@@ -18,6 +18,10 @@ function processResult(xhttp) {
 getdata();
 
 function postPaid(){
+    var text = document.querySelector(".postpaid__btn");
+    text.classList.add("on_select");
+    var text1 = document.querySelector(".prepaid__btn");
+    text1.classList.remove("on_select");
     var arr = ["Data:","Voice:","Price:","Subscrition Period:"]
     var select = document.querySelectorAll('.mobile__card')
     for(var i=0;i<select.length;i++){
@@ -40,6 +44,10 @@ function postPaid(){
     
 }
 function prePaid(){
+    var text = document.querySelector(".postpaid__btn");
+    text.classList.remove("on_select");
+    var text1 = document.querySelector(".prepaid__btn");
+    text1.classList.add("on_select");
     var arr = ["Data:","Voice:","Price:","Subscrition Period:"]
     var select = document.querySelectorAll('.mobile__card');
     for(var i=0;i<select.length;i++){
@@ -61,6 +69,10 @@ function prePaid(){
 
 }
 function wifi(){
+    var text = document.querySelector(".wifi__btn");
+    text.classList.add("on_select");
+    var text1 = document.querySelector(".tv__btn");
+    text1.classList.remove("on_select");
     var arr = ["Data:","Speed","Router:","Delivery:","Price:","Subscrition Period:"]
     var select = document.querySelectorAll('.tv__wifi__card')
     for(var i=0;i<select.length;i++){
@@ -87,6 +99,10 @@ function wifi(){
     
 }
 function tv(){
+    var text = document.querySelector(".wifi__btn");
+    text.classList.remove("on_select");
+    var text1 = document.querySelector(".tv__btn");
+    text1.classList.add("on_select");
     var arr = ["Channels","Price:","Subscrition Period:"]
     var select = document.querySelectorAll('.tv__wifi__card')
     for(var i=0;i<select.length;i++){
