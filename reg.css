@@ -3,15 +3,45 @@ body {
 }
 
 .container {
-    max-width: 400px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #000000;
 }
 
+.phone-number-container {
+    display: flex;
+    align-items: center;
+}
+
+.phone-number-container input {
+    margin-right: 5px;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container input[type="checkbox"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 10px;
+}
+
+
 h2 {
     text-align: center;
 }
+
+
 
 input[type="text"],
 input[type="email"],
@@ -27,4 +57,7 @@ input[type="submit"] {
     color: #fff;
     border: none;
     cursor: pointer;
+}
+#countrycode{
+    width: 15%;
 }

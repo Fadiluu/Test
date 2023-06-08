@@ -9,6 +9,16 @@ body {
     border: 1px solid #000201;
 }
 
+.password-container {
+    position: relative;
+}
+
+.password-container input[type="checkbox"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 h2 {
     text-align: center;
 }

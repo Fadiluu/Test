@@ -14,8 +14,9 @@
     color: black;
 }
 .on_select{
-    background-color: #B70404;
+    background-color: darkgray;
     color: white;
+    border: none;
 }
 .subscription__btn{
     background-color: #B70404;

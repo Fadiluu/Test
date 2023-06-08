@@ -123,12 +123,6 @@ function tv(){
     
 }
 
-
-
-
-
-
-
 // postPaidBtn = document.querySelector('.postpaid__btn')
 
 // postPaidBtn.addEventListener('click', function(){

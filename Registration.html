@@ -7,17 +7,28 @@
 <a href="reg.css"></a>
 <body>
     <div class="container">
+        <script>
+            function togglePasswordVisibility() {
+                var passwordInput = document.getElementById("password");
+                var showPasswordCheckbox = document.getElementById("showPasswordCheckbox");
+                
+                if (showPasswordCheckbox.checked) {
+                    passwordInput.type = "text";
+                } else {
+                    passwordInput.type = "password";
+                }
+            }
+        </script>
     <h2><u>Registration Form</u></h2>
     <h3>Enter Your Details:</h3>
-        <form action="registration.php" method="POST">
-            <form>
+            <form action="Login_register.html">
                 <table>
                     <tr>
                         <td>
                             First Name:
                         </td>
                         <td>
-                            <input type="text" name="FirstName" size="30" required></br>
+                            <input type="text" id="FirstName" size="30" pattern="([A-Za-z])+"required></br>
                         </td>
                     </tr>
                     <tr>
@@ -25,7 +36,7 @@
                             Last Name:
                         </td>
                         <td>
-                            <input type="text" name="LastName" size="30" required></br>
+                            <input type="text" id="LastName" size="30" pattern="([A-Za-z])+"required></br>
                         </td>
                     </tr>
                     <tr>
@@ -33,7 +44,7 @@
                             Date of Birth:
                         </td>
                         <td>
-                            <input type="date" name="DateofBirth" size="30" required></br>
+                            <input type="date" id="DateofBirth" size="30" required></br>
                         </td>
                     </tr>
                     <tr>
@@ -41,16 +52,16 @@
                             Email Address:
                         </td>
                         <td>
-                            <input type="email" name="Email" size="30" required></br>
+                            <input type="email" id="Email" size="30" required></br>
                         </td>
                     </tr>
                 </tr>
                 <tr>
                     <td>
                         Phone Number:
-                        <td>
-                            <input type="text" name="countrycode" value="+971" disabled>
-                            <input type="text" name="phonenumber" size="10"><br/>
+                        <td class="phone-number-container">
+                            <input type="text" id="countrycode" value="(+971)"  disabled>
+                            <input type="text" id="phonenumber" pattern="\5\d{8}"  required><br/>
                         </td>
                     </td>
                 </tr>
@@ -59,7 +70,7 @@
                         User Name:
                     </td>
                     <td>
-                        <input type="text" name="Username" size="30" required>
+                        <input type="text" id="Username" size="30" pattern="([A-Za-z])+" required>
                     </td>
                 </tr>
                 <tr>
@@ -67,7 +78,9 @@
                         Password:
                     </td>
                     <td>
-                        <input type="password" name="password" size="30" required>
+                        <input type="password" id="password" placeholder="Include letters, numbers and characters" size="30" pattern="^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[^a-zA-Z0-9]).{8,}$" required>
+                        <input type="checkbox" id="showPasswordCheckbox" onchange="togglePasswordVisibility()">
+                        <label for="showPasswordCheckbox">Show Password</label>
                     </td>
                 </tr>
                 <tr>
@@ -77,6 +90,5 @@
                 </tr>
             </table>
         </form>
-    </div>
 </body>
 </html>

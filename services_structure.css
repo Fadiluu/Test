@@ -76,7 +76,8 @@ button{
 
 .option__btn{
     border-radius: .5rem;
-    padding: .25em 1em;
+    /*padding: .25em 1em;*/
+    padding: .5em 1.75em;
 }
 .option__btn:last-child{
     margin-left: 1em;
