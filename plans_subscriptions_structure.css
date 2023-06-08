@@ -21,23 +21,21 @@ p{
 ul{
     margin: 0;
     list-style-type: none;
-    
 }
-
 a{
     text-decoration: none;
     color: white;
     margin: 0;
 } 
+
 .main__body{
     margin-right: auto;
     margin-left: auto;
 }
 main{
     padding: .75rem;
-    
-    /* width: 100%; */
 }
+
 button{
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
@@ -127,7 +125,7 @@ button{
 
    .main__grid{
     grid-template-areas: 
-    'card-1 card-2 '
+    'card-1 card-2'
     'card-3 card-4';
     gap: 2rem;
    }

@@ -9,6 +9,14 @@
           "Price": "100 AED",
           "Time": "Monthy"
         }
+      ],
+      "PrePaid": [
+        {
+          "Data": "Enjoy Unlimited data",
+          "Voice":"20minutes local",
+          "Price": "50 AED",
+          "Time":"30 days"
+        }
       ]
     },
     "TV_Wireless_Services":{

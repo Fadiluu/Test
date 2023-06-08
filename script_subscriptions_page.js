@@ -30,6 +30,17 @@ function showMySubscriptions(){
         "<div class=\"unsubscribe__btn\"><button class=\"unsubscribe__btn--right\" onClick=\"unsub(this)\">Unsubscribe</button><hr></div></div>";
     }
 
+    var keys = Object.keys(dataObj.Services.Mobile_Services.PrePaid[0]);
+
+    for(var i = 0; i < dataObj.Services.Mobile_Services.PrePaid.length; i++){
+        document.querySelector(".pre-paid-plans").innerHTML += "<div class=\"record\">" +
+        keys[0] + ": " + dataObj.Services.Mobile_Services.PrePaid[i].Data + "&emsp;" +
+        keys[1] + ": " + dataObj.Services.Mobile_Services.PrePaid[i].Voice + "&emsp;" +
+        keys[2] + ": " + dataObj.Services.Mobile_Services.PrePaid[i].Price + "&emsp;" +
+        keys[3] + ": " + dataObj.Services.Mobile_Services.PrePaid[i].Time + "</p>" +
+        "<div class=\"unsubscribe__btn\"><button class=\"unsubscribe__btn--right\" onClick=\"unsub(this)\">Unsubscribe</button><hr></div></div>";
+    }
+
     var keys_home_internet = Object.keys(dataObj.Services.TV_Wireless_Services.Home_Internet[0]);
 
     for(var i = 0; i < dataObj.Services.TV_Wireless_Services.Home_Internet.length; i++){
@@ -54,9 +65,7 @@ function showMySubscriptions(){
     
 }
 
-
 function unsub(e){
     var unsubParentDiv = e.parentNode.parentNode
-    unsubParentDiv.innerHTML = ""
-    unsubParentDiv.innerHTML = "<p>None<p>"
+    unsubParentDiv.innerHTML = "<p>No subscribed plans in this category.<p>"
 }

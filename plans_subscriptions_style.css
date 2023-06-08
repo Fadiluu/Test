@@ -15,6 +15,8 @@
 }
 .option__btn:hover{
     background-color: darkgray;
+    border: none;
+    color: white;
 }
 .on_select{
     background-color: black;

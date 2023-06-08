@@ -1,12 +1,15 @@
-body {
-    font-family: Arial, sans-serif;
+body{
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    padding: .75rem;
 }
 
 .container {
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #000000;
+    border: 1px solid #000000; /* to be removed */
 }
 
 .phone-number-container {
@@ -41,8 +44,6 @@ h2 {
     text-align: center;
 }
 
-
-
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -52,8 +53,12 @@ input[type="submit"] {
     margin-bottom: 10px;
 }
 
+/* .submit-button-container{
+    text-align: right;
+} */
+
 input[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #B70404;
     color: #fff;
     border: none;
     cursor: pointer;

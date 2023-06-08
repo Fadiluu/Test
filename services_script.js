@@ -22,6 +22,8 @@ function postPaid(){
     text.classList.add("on_select");
     var text1 = document.querySelector(".prepaid__btn");
     text1.classList.remove("on_select");
+
+
     var arr = ["Data:","Voice:","Price:","Subscrition Period:"]
     var select = document.querySelectorAll('.mobile__card')
     for(var i=0;i<select.length;i++){
@@ -38,7 +40,7 @@ function postPaid(){
         select[i].innerHTML+="<p>"+dataObj.Services.Mobile_Services.PostPaid[i].Price+"</p>\n"
         select[i].innerHTML+="<h3>"+arr[j++]+"</h3>\n"
         select[i].innerHTML+="<p>"+dataObj.Services.Mobile_Services.PostPaid[i].Time+"</p>\n"
-        select[i].innerHTML+="<div class=\"sub__btn--right\"><button class=\"subscription__btn\">Subscribe</button></div>"      
+        select[i].innerHTML+="<div class=\"sub__btn--right\"><button class=\"subscription__btn\" onclick=\"subscribe_postpaid()\">Subscribe</button></div>"      
     }
     
     
@@ -48,6 +50,8 @@ function prePaid(){
     text.classList.remove("on_select");
     var text1 = document.querySelector(".prepaid__btn");
     text1.classList.add("on_select");
+
+
     var arr = ["Data:","Voice:","Price:","Subscrition Period:"]
     var select = document.querySelectorAll('.mobile__card');
     for(var i=0;i<select.length;i++){
@@ -63,7 +67,7 @@ function prePaid(){
         select[i].innerHTML+="<p>"+dataObj.Services.Mobile_Services.PrePaid[i].Price+"</p>\n"
         select[i].innerHTML+="<h3>"+arr[j++]+"</h3>\n"
         select[i].innerHTML+="<p>"+dataObj.Services.Mobile_Services.PrePaid[i].Time+"</p>\n"
-        select[i].innerHTML+="<div class=\"sub__btn--right\"><button class=\"subscription__btn\">Subscribe</button></div>"      
+        select[i].innerHTML+="<div class=\"sub__btn--right\" onclick=\"subscribe_prepaid()\"><button class=\"subscription__btn\">Subscribe</button></div>"      
     }
     
 
@@ -93,7 +97,7 @@ function wifi(){
         select[i].innerHTML+="<p>"+dataObj.Services.TV_Wireless_Services.Home_Internet[i].Price+"</p>\n"
         select[i].innerHTML+="<h3>"+arr[j++]+"</h3>\n"
         select[i].innerHTML+="<p>"+dataObj.Services.TV_Wireless_Services.Home_Internet[i].Time+"</p>\n"
-        select[i].innerHTML+="<div class=\"sub__btn--right\"><button class=\"subscription__btn\">Subscribe</button></div>"      
+        select[i].innerHTML+="<div class=\"sub__btn--right\"><button class=\"subscription__btn\" onclick=\"subscribe_wifi()\">Subscribe</button></div>"      
     }
     
     
@@ -117,14 +121,46 @@ function tv(){
         select[i].innerHTML+="<p>"+dataObj.Services.TV_Wireless_Services.TV_Packages[i].Price+"</p>\n"
         select[i].innerHTML+="<h3>"+arr[j++]+"</h3>\n"
         select[i].innerHTML+="<p>"+dataObj.Services.TV_Wireless_Services.TV_Packages[i].Time+"</p>\n"
-        select[i].innerHTML+="<div class=\"sub__btn--right\"><button class=\"subscription__btn\">Subscribe</button></div>"      
+        select[i].innerHTML+="<div class=\"sub__btn--right\" onclick=\"subscribe_tv()\"><button class=\"subscription__btn\">Subscribe</button></div>"      
     }
     
     
 }
 
-// postPaidBtn = document.querySelector('.postpaid__btn')
+var post_paid_plans = 0;
+var pre_paid_plans = 0;
+var home_internet_plans = 0;
 
-// postPaidBtn.addEventListener('click', function(){
-//     postPaid();
-// },{ once: true })
+function subscribe_postpaid(){
+    var decision = confirm("You are subscribing to this plan");
+        if (decision == true){
+            if (post_paid_plans == 0) post_paid_plans++;
+            else{
+                window.alert("Sorry. You can't subscribe to more than 1 plan in this category.");
+            }
+        }
+}
+
+function subscribe_prepaid(){
+    var decision = confirm("You are subscribing to this plan");
+        if (decision == true){
+            if (pre_paid_plans == 0) pre_paid_plans++;
+            else{
+                window.alert("Sorry. You can't subscribe to more than 1 plan in this category.");
+            }
+        }
+}
+
+function subscribe_wifi(){
+    var decision = confirm("You are subscribing to this plan");
+        if (decision == true){
+            if (home_internet_plans == 0) home_internet_plans++;
+            else{
+                window.alert("Sorry. You can't subscribe to more than 1 plan in this category.");
+            }
+        }
+}
+
+function subscribe_tv(){
+    confirm("You are subscribing to this plan");
+}

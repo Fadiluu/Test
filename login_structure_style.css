@@ -1,0 +1,61 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    padding: .75rem;
+}
+
+.company-name{
+    color: #B70404;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid black; /* to be removed */
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container input[type="checkbox"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.login-header{
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"]{
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: lightgrey;
+    border: none;
+    border-radius: .5rem;
+}
+
+input[type="submit"] {
+    padding: .5em 1.75em;
+    background-color: #B70404;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 1em;
+}
+
+a:link, a:visited{
+    color: black;
+}
