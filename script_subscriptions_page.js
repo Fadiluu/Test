@@ -58,8 +58,8 @@ function showMySubscriptions(){
     for(var i = 0; i < dataObj.Services.TV_Wireless_Services.TV_Packages.length; i++){
         document.querySelector(".tv-packages").innerHTML += "<div class=\"record\"><p>" + dataObj.Services.TV_Wireless_Services.Home_Internet[i].Name + "<\p>" +
         keys_tv_packages[1] + ": " + dataObj.Services.TV_Wireless_Services.TV_Packages[i].Channels + "&emsp;" +
-        keys_tv_packages[3] + ": " + dataObj.Services.TV_Wireless_Services.TV_Packages[i].Price + "&emsp;" +
-        keys_tv_packages[4] + ": " + dataObj.Services.TV_Wireless_Services.TV_Packages[i].Time + "</p>" +
+        keys_tv_packages[2] + ": " + dataObj.Services.TV_Wireless_Services.TV_Packages[i].Price + "&emsp;" +
+        keys_tv_packages[3] + ": " + dataObj.Services.TV_Wireless_Services.TV_Packages[i].Time + "</p>" +
         "<div class=\"unsubscribe__btn\"> <button class=\"unsubscribe__btn--right\" onClick=\"unsub(this)\">Unsubscribe</button><hr></div></div>";
     }
     
