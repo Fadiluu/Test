@@ -13,8 +13,11 @@
     background-color: transparent;
     color: black;
 }
-.on_select{
+.option__btn:hover{
     background-color: darkgray;
+}
+.on_select{
+    background-color: black;
     color: white;
     border: none;
 }
