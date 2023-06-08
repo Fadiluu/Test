@@ -1,0 +1,32 @@
+.nav_bar{
+    background-color: #B70404; 
+    font-size: 1.5rem;
+}
+.mobile__card{
+    border: 1px solid black;
+}
+.tv__wifi__card{
+    border: 1px solid black;
+}
+.option__btn{
+    border: 1px solid black;
+    background-color: transparent;
+    color: black;
+}
+.on_select{
+    background-color: #B70404;
+    color: white;
+}
+.subscription__btn{
+    background-color: #B70404;
+    border: none;
+}
+.unsubscribe__btn{
+    color: black;
+}
+.unsubscribe__btn--right{
+    border: 1px solid black;
+    background-color: black;
+    text-align: right;
+    color: white;
+}
