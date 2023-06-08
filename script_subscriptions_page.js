@@ -27,7 +27,7 @@ function showMySubscriptions(){
         keys[2] + ": " + dataObj.Services.Mobile_Services.PostPaid[i].Voice + "&emsp;" +
         keys[3] + ": " + dataObj.Services.Mobile_Services.PostPaid[i].Price + "&emsp;" +
         keys[4] + ": " + dataObj.Services.Mobile_Services.PostPaid[i].Time + "</p>" +
-        "<div class=\"unsubscribe__btn\"><button class=\"unsubscribe__btn--right\" onClick=\"unsub(this)\">Unsubscribe</button><hr></div></div>";
+        "<div class=\"unsubscribe__btn__container\"><button class=\"unsubscribe__btn--right\" onClick=\"unsub(this)\">Unsubscribe</button><hr></div></div>";
     }
 
     var keys = Object.keys(dataObj.Services.Mobile_Services.PrePaid[0]);
@@ -38,7 +38,7 @@ function showMySubscriptions(){
         keys[1] + ": " + dataObj.Services.Mobile_Services.PrePaid[i].Voice + "&emsp;" +
         keys[2] + ": " + dataObj.Services.Mobile_Services.PrePaid[i].Price + "&emsp;" +
         keys[3] + ": " + dataObj.Services.Mobile_Services.PrePaid[i].Time + "</p>" +
-        "<div class=\"unsubscribe__btn\"><button class=\"unsubscribe__btn--right\" onClick=\"unsub(this)\">Unsubscribe</button><hr></div></div>";
+        "<div class=\"unsubscribe__btn__container\"><button class=\"unsubscribe__btn--right\" onClick=\"unsub(this)\">Unsubscribe</button><hr></div></div>";
     }
 
     var keys_home_internet = Object.keys(dataObj.Services.TV_Wireless_Services.Home_Internet[0]);
@@ -50,7 +50,7 @@ function showMySubscriptions(){
         keys_home_internet[2] + ": " + dataObj.Services.TV_Wireless_Services.Home_Internet[i].Router + "&emsp;" +
         keys_home_internet[3] + ": " + dataObj.Services.TV_Wireless_Services.Home_Internet[i].Price + "&emsp;" +
         keys_home_internet[4] + ": " + dataObj.Services.TV_Wireless_Services.Home_Internet[i].Time + "</p>" +
-        "<div class=\"unsubscribe__btn\"> <button class=\"unsubscribe__btn--right\" onClick=\"unsub(this)\">Unsubscribe</button><hr></div></div>";
+        "<div class=\"unsubscribe__btn__container\"> <button class=\"unsubscribe__btn--right\" onClick=\"unsub(this)\">Unsubscribe</button><hr></div></div>";
     }
 
     var keys_tv_packages = Object.keys(dataObj.Services.TV_Wireless_Services.TV_Packages[0]);
@@ -60,7 +60,7 @@ function showMySubscriptions(){
         keys_tv_packages[1] + ": " + dataObj.Services.TV_Wireless_Services.TV_Packages[i].Channels + "&emsp;" +
         keys_tv_packages[2] + ": " + dataObj.Services.TV_Wireless_Services.TV_Packages[i].Price + "&emsp;" +
         keys_tv_packages[3] + ": " + dataObj.Services.TV_Wireless_Services.TV_Packages[i].Time + "</p>" +
-        "<div class=\"unsubscribe__btn\"> <button class=\"unsubscribe__btn--right\" onClick=\"unsub(this)\">Unsubscribe</button><hr></div></div>";
+        "<div class=\"unsubscribe__btn__container\"> <button class=\"unsubscribe__btn--right\" onClick=\"unsub(this)\">Unsubscribe</button><hr></div></div>";
     }
     
 }
