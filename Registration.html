@@ -21,79 +21,42 @@
                 }
             }
         </script>
-    <h2><u>Registration Form</u></h2>
-    <h3>Enter Your Details:</h3>
-            <form action="Login.html">
-                <table>
-                    <tr>
-                        <td>
-                            First Name:
-                        </td>
-                        <td>
-                            <input type="text" id="FirstName" size="30" pattern="([A-Za-z])+"required></br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Last Name:
-                        </td>
-                        <td>
-                            <input type="text" id="LastName" size="30" pattern="([A-Za-z])+"required></br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Date of Birth:
-                        </td>
-                        <td>
-                            <input type="date" id="DateofBirth" size="30" required></br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Email Address:
-                        </td>
-                        <td>
-                            <input type="email" id="Email" size="30" required></br>
-                        </td>
-                    </tr>
-                </tr>
-                <tr>
-                    <td>
-                        Phone Number:
-                        <td class="phone-number-container">
-                            <input type="text" id="countrycode" value="(+971)"  disabled>
-                            <input type="text" id="phonenumber" pattern="\5\d{8}"  required><br/>
-                        </td>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        User Name:
-                    </td>
-                    <td>
-                        <input type="text" id="Username" size="30" pattern="([A-Za-z])+" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Password:
-                    </td>
-                    <td>
-                        <input type="password" id="password" placeholder="Include letters, numbers and characters" size="30" pattern="^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[^a-zA-Z0-9]).{8,}$" required>
-                        <input type="checkbox" id="showPasswordCheckbox" onchange="togglePasswordVisibility()">
-                        <label for="showPasswordCheckbox">Show Password</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <!-- <div class="submit-button-container">
-                            <input type="submit" value="Register">
-                        </div> -->
-                        <input type="submit" value="Register">
-                    </td>
-                </tr>
-            </table>
+        <h2>Registration Form</h2>
+        <h3>Enter Your Details:</h3>
+        <form action="Login.html">
+        <table>
+            <tr>
+                <td>First Name:</td>
+                <td>Last Name:</td>
+            </tr>
+            <tr>
+                <td><input type="text" id="FirstName" size="30" pattern="([A-Za-z])+"required></td>
+                <td><input type="text" id="LastName" size="30" pattern="([A-Za-z])+"required></td>
+            </tr>
+            <tr>
+                <td>Date of Birth:</td>
+                <td>Email Address:</td>
+            </tr>
+            <tr>
+                <td><input type="date" id="DateofBirth" size="30" required></td>&nbsp;
+                <td><input type="email" id="Email" size="30" required></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td>Phone Number:</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="password" id="password" placeholder="Include letters, numbers and characters" size="30" pattern="^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[^a-zA-Z0-9]).{8,}$" required>
+                    <input type="checkbox" id="showPasswordCheckbox" onchange="togglePasswordVisibility()">
+                    <label for="showPasswordCheckbox">Show Password</label>
+                </td>
+                <td class="phone-number-container">
+                    <input type="text" id="countrycode" value="(+971)"  disabled>
+                    <input type="text" class="number__area" id="phonenumber" pattern="\5\d{8}"  required>
+                </td>
+        </table>
+        <div class="register__btn"><input type="submit" value="Register"></div>
         </form>
 </body>
 </html>

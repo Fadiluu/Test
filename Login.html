@@ -12,30 +12,32 @@
         <h1>Communic8</h1>
     </div>
     <div class="container">
-        <script>
-            function togglePasswordVisibility() {
-                var passwordInput = document.getElementById("password");
-                var showPasswordCheckbox = document.getElementById("showPasswordCheckbox");
-                
-                if (showPasswordCheckbox.checked) {
-                    passwordInput.type = "text";
-                } else {
-                    passwordInput.type = "password";
-                }
-            }
-        </script>
         <h2 class="login-header">Login</h2>
         <form action="index.html">
-            <input type="text" id="username" placeholder="Username" required>
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Username" required><br>
+            <label for="password">Password</label>
             <input type="password" id="password" placeholder="Password" required><br />
-            <input type="submit" value="Login"></br>
             <input type="checkbox" id="showPasswordCheckbox" onchange="togglePasswordVisibility()">
-            <label for="showPasswordCheckbox">Show Password</label>
+            <label for="showPasswordCheckbox">Show Password</label><br>
+            <div class="submit__btn"><input type="submit" value="Login"></br></div>
         </form>
 
         <div class="register-link">
             <a href="Registration.html">Not Registered? Register Now</a>
         </div>
     </div>
+    <script>
+        function togglePasswordVisibility() {
+            var passwordInput = document.getElementById("password");
+            var showPasswordCheckbox = document.getElementById("showPasswordCheckbox");
+            
+            if (showPasswordCheckbox.checked) {
+                passwordInput.type = "text";
+            } else {
+                passwordInput.type = "password";
+            }
+        }
+    </script>
 </body>
 </html>

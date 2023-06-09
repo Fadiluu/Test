@@ -1,59 +1,42 @@
+html{
+    font-size: 16px;
+}
 body{
     font-family: 'Poppins', sans-serif;
-}
-main{
-    padding: .75rem;
+    padding: .5em 1.5em;
 }
 
-.company-name{
-    color: #B70404;
+.container{
+    width: 100%;
+    max-width: 25rem;
+    margin: 7em auto;
 }
-
-.container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid black; /* to be removed */
-}
-
-.password-container {
-    position: relative;
-}
-
-.password-container input[type="checkbox"] {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.login-header{
-    text-align: center;
-}
-
-input[type="text"],
-input[type="password"],
-input[type="submit"]{
-    font-family: 'Poppins', sans-serif;
-    margin: auto;
-    width: 80%;
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: lightgrey;
-    border: none;
+input[type="text"], input[type="password"]{
+    width: 90%;
+    padding: 1em;
     border-radius: .5rem;
+    border: 0;
+    background-color: darkgray;
+    margin: 1em 0;
 }
-
-input[type="submit"] {
-    padding: .5em 1.75em;
-    background-color: #B70404;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.register-link {
-    text-align: center;
+input[type="submit"]{
     margin-top: 1em;
+    background-color: #B70404;
+    border-radius: .5rem;
+    border: 0;
+    width: 60%;
+    padding: 1em;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.submit__btn{
+    text-align: center;
+}
+.register-link {
+    margin-top: 1em;
+    text-align: center;
 }
 
 a:link, a:visited{
